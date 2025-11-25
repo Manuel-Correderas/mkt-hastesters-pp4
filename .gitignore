@@ -1,0 +1,212 @@
+# ==============================
+# SISTEMAS OPERATIVOS
+# ==============================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.tmp
+*.swp
+*.bak
+
+# ==============================
+# PYTHON
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+*.manifest
+*.spec
+*.so
+*.log
+*.sqlite3
+build/
+dist/
+.eggs/
+.mypy_cache/
+.pytest_cache/
+.tox/
+.coverage*
+htmlcov/
+.cache/
+.ipynb_checkpoints/
+.pyre/
+.dmypy.json
+.pytype/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+pip-wheel-metadata/
+*.dist-info/
+.env
+.env.docker
+
+# ==============================
+# STREAMLIT / FRONTEND
+# ==============================
+.streamlit/secrets.toml
+.streamlit/config.toml
+node_modules/
+package-lock.json
+yarn.lock
+
+# ==============================
+# VISUAL STUDIO CODE / IDEs
+# ==============================
+.vscode/
+.idea/
+*.code-workspace
+.history/
+*.sublime-*
+
+# ==============================
+# DATOS / MODELOS
+# ==============================
+
+*.json
+
+# Archivos de datos grandes o sensibles
+*.db
+*.sqlite
+*.parquet
+*.pkl
+*.h5
+*.sav
+*.dat
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.bz2
+
+# ==============================
+# CONFIGURACIÓN PERSONAL / PRIVADA
+# ==============================
+.env
+*.key
+*.pem
+*.crt
+*.cfg
+*.ini
+*.yaml
+*.yml
+
+# ==============================
+# ONE DRIVE / SINCRONIZACIÓN
+# ==============================
+~$*
+OneDrive*/
+
+# ==============================
+# PROYECTO Ecom MKT Lab
+# ==============================
+# Ignorar archivos de requerimientos locales
+# Requerimientos para Ecom MKT Lab
+requirements.txt
+requirements_local.txt
+requirements-dev.txt
+requerimientos.txt
+requerimientos_local.txt
+# ───────── ENTORNOS PYTHON ─────────
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+
+# Caches de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+
+# Archivos de logs
+*.log
+
+# ───────── NODE / FRONTEND ─────────
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Builds / dist / bundlers
+dist/
+build/
+.cache/
+.next/
+.turbo/
+.parcel-cache/
+
+# ───────── STREAMLIT ─────────
+.streamlit/cache/
+.streamlit/static/
+
+# ───────── DATOS PESADOS / DB ─────────
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.csv
+*.tsv
+*.parquet
+*.zip
+*.rar
+*.7z
+*.gz
+*.tar
+*.bak
+*.dump
+
+# Si tenés dumps SQL enormes
+dump_*.sql
+*.sql
+
+# ───────── MEDIOS PESADOS ─────────
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wmv
+*.flv
+*.mp3
+*.wav
+
+# ───────── IDE / SISTEMA ─────────
+.vscode/
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ───────── COSAS DE PRUEBA LOCALES ─────────
+tmp/
+temp/
+*.tmp
+/.pytest_cache/
+.coverage
+htmlcov/
+
+# ───────── SECRETS / CONFIG PRIVADO ─────────
+.env
+.env.*
+*.secret
+*.key
+*.pem
