@@ -1,212 +1,35 @@
-# ==============================
-# SISTEMAS OPERATIVOS
-# ==============================
-.DS_Store
-Thumbs.db
-ehthumbs.db
-desktop.ini
-$RECYCLE.BIN/
-*.tmp
-*.swp
-*.bak
+# === Core backend (FastAPI) ===
+fastapi>=0.111.0,<0.116.0
+uvicorn[standard]>=0.30.0,<0.33.0
+sqlalchemy>=2.0.30,<2.1.0
+pydantic>=2.7.0,<2.9.0
+python-dotenv>=1.0.1,<2.0.0
+email-validator>=2.1.0.post1,<3.0.0
+python-multipart>=0.0.9,<0.0.10
 
-# ==============================
-# PYTHON
-# ==============================
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-*.pdb
-*.egg
-*.egg-info/
-*.manifest
-*.spec
-*.so
-*.log
-*.sqlite3
-build/
-dist/
-.eggs/
-.mypy_cache/
-.pytest_cache/
-.tox/
-.coverage*
-htmlcov/
-.cache/
-.ipynb_checkpoints/
-.pyre/
-.dmypy.json
-.pytype/
+# === Autenticación / Seguridad ===
+python-jose[cryptography]>=3.3.0,<4.0.0
+passlib[bcrypt]==1.7.4
+bcrypt>=4.0.1,<5.0.0
+PyJWT>=2.8.0,<3.0.0
 
-# Entornos virtuales
-.venv/
-venv/
-env/
-ENV/
-env.bak/
-pip-wheel-metadata/
-*.dist-info/
-.env
-.env.docker
+# === Base de datos ===
+pymysql>=1.1.0,<1.2.0
 
-# ==============================
-# STREAMLIT / FRONTEND
-# ==============================
-.streamlit/secrets.toml
-.streamlit/config.toml
-node_modules/
-package-lock.json
-yarn.lock
+# === HTTP Client ===
+requests>=2.31.0,<3.0.0
 
-# ==============================
-# VISUAL STUDIO CODE / IDEs
-# ==============================
-.vscode/
-.idea/
-*.code-workspace
-.history/
-*.sublime-*
+# === Streamlit (Frontend Analítico) ===
+streamlit>=1.37.0,<2.0.0
+pandas>=2.2.0,<3.0.0
+numpy>=1.26.0,<2.0.0
+Pillow>=10.0.0,<12.0.0
+plotly>=5.18.0,<6.0.0
+matplotlib>=3.8.0,<4.0.0
 
-# ==============================
-# DATOS / MODELOS
-# ==============================
+# === Extra útil ===
+python-dateutil>=2.9.0,<3.0.0
 
-*.json
-
-# Archivos de datos grandes o sensibles
-*.db
-*.sqlite
-*.parquet
-*.pkl
-*.h5
-*.sav
-*.dat
-*.zip
-*.rar
-*.7z
-*.tar
-*.gz
-*.bz2
-
-# ==============================
-# CONFIGURACIÓN PERSONAL / PRIVADA
-# ==============================
-.env
-*.key
-*.pem
-*.crt
-*.cfg
-*.ini
-*.yaml
-*.yml
-
-# ==============================
-# ONE DRIVE / SINCRONIZACIÓN
-# ==============================
-~$*
-OneDrive*/
-
-# ==============================
-# PROYECTO Ecom MKT Lab
-# ==============================
-# Ignorar archivos de requerimientos locales
-# Requerimientos para Ecom MKT Lab
-
-requirements_local.txt
-requirements-dev.txt
-requerimientos.txt
-requerimientos_local.txt
-# ───────── ENTORNOS PYTHON ─────────
-.venv/
-venv/
-env/
-ENV/
-env.bak/
-
-# Caches de Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-*.pdb
-*.pkl
-
-# Archivos de logs
-*.log
-
-# ───────── NODE / FRONTEND ─────────
-node_modules/
-npm-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# Builds / dist / bundlers
-dist/
-build/
-.cache/
-.next/
-.turbo/
-.parcel-cache/
-
-# ───────── STREAMLIT ─────────
-.streamlit/cache/
-.streamlit/static/
-
-# ───────── DATOS PESADOS / DB ─────────
-*.sqlite
-*.sqlite3
-*.db
-*.db-journal
-*.csv
-*.tsv
-*.parquet
-*.zip
-*.rar
-*.7z
-*.gz
-*.tar
-*.bak
-*.dump
-
-# Si tenés dumps SQL enormes
-dump_*.sql
-*.sql
-
-# ───────── MEDIOS PESADOS ─────────
-*.mp4
-*.mov
-*.avi
-*.mkv
-*.wmv
-*.flv
-*.mp3
-*.wav
-
-# ───────── IDE / SISTEMA ─────────
-.vscode/
-.idea/
-*.iml
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# ───────── COSAS DE PRUEBA LOCALES ─────────
-tmp/
-temp/
-*.tmp
-/.pytest_cache/
-.coverage
-htmlcov/
-
-# ───────── SECRETS / CONFIG PRIVADO ─────────
-.env
-.env.*
-*.secret
-*.key
-*.pem
+# === Testing (Render los puede ignorar pero no rompen) ===
+pytest>=8.2.0,<9.0.0
+httpx>=0.27.0,<0.28.0
