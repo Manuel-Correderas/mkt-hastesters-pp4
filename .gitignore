@@ -112,7 +112,7 @@ OneDrive*/
 # ==============================
 # Ignorar archivos de requerimientos locales
 # Requerimientos para Ecom MKT Lab
-requirements.txt
+
 requirements_local.txt
 requirements-dev.txt
 requerimientos.txt
